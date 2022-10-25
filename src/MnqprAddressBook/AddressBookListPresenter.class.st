@@ -11,8 +11,8 @@ Class {
 AddressBookListPresenter >> defaultLayout [
 
 	^ SpBoxLayout newTopToBottom
-		add: addressBookList;
-		yourself
+		  add: addressBookList;
+		  yourself
 ]
 
 { #category : #initialization }
@@ -24,4 +24,10 @@ AddressBookListPresenter >> initializePresenters [
 				                    title: 'Name'
 				                    evaluated: #name);
 		                   yourself
+]
+
+{ #category : #initialization }
+AddressBookListPresenter >> updatePresenter [
+
+	addressBookList items: (self application repository selectAll: AddressBookItem)
 ]
