@@ -11,6 +11,18 @@ Class {
 	#category : #MnqprAddressBook
 }
 
+{ #category : #persistence }
+AddressBookItem class >> isVoyageRoot [
+
+	^ true
+]
+
+{ #category : #persistence }
+AddressBookItem class >> voyageCollectionName [
+
+	^ 'AddressBookEntries'
+]
+
 { #category : #initialization }
 AddressBookItem >> initialize [
 
