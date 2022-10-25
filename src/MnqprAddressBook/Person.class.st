@@ -11,3 +11,9 @@ Class {
 	],
 	#category : #MnqprAddressBook
 }
+
+{ #category : #accessing }
+Person >> name [
+
+	^ lastName, ' ', middleName, ' ', firstName
+]

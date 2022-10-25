@@ -6,3 +6,9 @@ Class {
 	],
 	#category : #MnqprAddressBook
 }
+
+{ #category : #accessing }
+Company >> name [
+
+	^ name
+]

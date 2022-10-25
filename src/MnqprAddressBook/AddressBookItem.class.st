@@ -32,3 +32,9 @@ AddressBookItem >> initialize [
 	emailAddresses := OrderedCollection new.
 	uris := OrderedCollection new
 ]
+
+{ #category : #accessing }
+AddressBookItem >> name [
+
+	self subclassResponsibility
+]
